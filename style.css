@@ -1,0 +1,81 @@
+body {
+     margin-top: 13%;
+     margin-left: 33%;
+     margin-right: 33%;
+     background-color: #050210;
+     }
+    #box-1 {
+     position: absolute;
+     height: 500px;
+     width: 500px;
+     border-radius: 50%;
+     background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+     filter: blur(74px);
+     }
+    #box-2 {
+     margin-top: 20px;
+     margin-left: 20px;
+     position: absolute;
+     height: 460px;
+     width: 460px;
+     border-radius: 50%;
+     background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+     }
+    #box-3 { 
+     height: 400px;
+     width: 400px;
+     position: absolute;
+     border-radius: 50%;
+     background: #0a0422;
+     margin-top: 50px;
+     margin-left: 50px;
+     }
+    #box-3::after {
+     content: "";
+     height: 380px;
+     width: 380px;
+     position: absolute;
+     border-radius: 50%;
+     background: #050210;
+     margin-top: 10px;
+     margin-left: 10px;
+     }
+    #box-2 {
+     animation-name: wheel;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     }
+    #box-1 {
+     animation-name: wheel;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+     }
+    #box-3::after {
+     animation-name: pulse;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease;
+     }
+    @keyframes wheel {
+     from{
+         transform: rotate(0deg);
+     }
+     to{
+         transform: rotate(360deg);
+     }
+     }
+    @keyframes pulse {
+     from{
+         transform: scale(0.1);
+     }
+     to{
+         transform: scale(0.9);
+     }
+     }
+
+
+
+     <!--Stefan Vucinic-->
